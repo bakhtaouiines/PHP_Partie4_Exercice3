@@ -1,7 +1,7 @@
 <?php
         function stringFunction($string1, $string2) : string 
         {
-        return stringFunction($string1, $string2);
+        return "Voici deux chaînes de caractères: $string1 et $string2";
 }?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -13,8 +13,7 @@
 </head>
 <body>
     <h1>Exercice 3 Partie 4 : Les fonctions PHP</h1>
-    <p><?= 'Voici une première chaîne de caractères'?></p>
-    <p><?='Voici une deuxième chaîne de caractères'?></p>
+    <p><?= stringFunction("Frodon","Sam")?></p>
     
 </body>
 </html>
