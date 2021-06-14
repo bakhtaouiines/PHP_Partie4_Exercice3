@@ -1,7 +1,8 @@
 <?php
-        function stringFunction($string1, $string2) : string 
+        declare(strict_types = 1);
+        function concatString(string $text1, string $text2) : string 
         {
-        return "Voici deux chaînes de caractères: $string1 et $string2";
+        return "Voici deux chaînes de caractères: $text1 et $text2";
 }?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -13,7 +14,7 @@
 </head>
 <body>
     <h1>Exercice 3 Partie 4 : Les fonctions PHP</h1>
-    <p><?= stringFunction("Frodon","Sam")?></p>
+    <p><?= concatString('Frodon','Sam')?></p>
     
 </body>
 </html>
